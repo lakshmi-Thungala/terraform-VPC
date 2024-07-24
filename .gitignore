@@ -1,1 +1,26 @@
 
+### .gitignore
+```gitignore
+# Ignore Terraform state files
+*.tfstate
+*.tfstate.backup
+
+# Ignore Terraform variables files
+*.tfvars
+
+# Ignore override files (used for local modifications)
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Ignore CLI configuration files
+.terraformrc
+terraform.rc
+
+# Ignore crash logs
+crash.log
+
+# Ignore .terraform directories
+.terraform/
+
