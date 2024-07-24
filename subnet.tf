@@ -11,3 +11,10 @@ resource "aws_subnet" "my_pub_sub2" {
   availability_zone = var.pub_sub2_az  # The availability zone for the second public subnet
   vpc_id = aws_vpc.my_vpc.id  # The ID of the VPC where the subnet is created
 }
+
+# Create the private subnet
+resource "aws_subnet" "my_priv_sub" {
+  cidr_block = var.priv_sub_cidr  # The CIDR block for the private subnet
+  availability_zone = var.priv_sub_az  # The availability zone for the private subnet
+  vpc_id = aws_vpc.my_vpc.id  # The ID of the VPC where the subnet is created
+}
